@@ -1,0 +1,25 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <title> new document </title>
+  <meta name="generator" content="editplus" />
+  <meta name="author" content="" />
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+ </head>
+
+ <body>
+ <div ID='dom'></div>
+  <script type="text/javascript">
+			  // 创建
+			var evt = document.createEvent("HTMLEvents");
+			// 初始化
+			evt.initEvent("alert", false, false);
+            dom.addEventListener("alert",function(){
+			console.log(10111)
+			},false)
+			// 触发, 即弹出文字
+			dom.dispatchEvent(evt);
+  </script>
+ </body>
+</html>
